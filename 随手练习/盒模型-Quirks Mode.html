@@ -1,0 +1,38 @@
+<!-- 
+	@Author      : xixihuang
+    @Date        : 2018-12-19 00:51
+    @Description : “标准模式”(Standards Mode) “怪异模式”(Quirks Mode)
+    @Update      : *
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>“标准模式”(Standards Mode) “怪异模式”(Quirks Mode)</title>	
+	<style type="text/css">	
+	td{
+		border-style:solid;
+		border-color:blue;
+	}
+
+	img{
+		width:200px;
+		height:200px;
+		border-style:solid;
+		border-color:orange;
+	}
+	</style>
+</head>
+<body>
+	<!-- 定义一个简单的 DIV 元素，设定其宽度和高度分别为 500px，定义 border 为 50px，红色。： -->
+	<h4>一行两列：</h4>
+	<table>
+		<tr>
+			<td><img src="./images/00.png"></td> 
+			<td><img src="./images/00.png"></td> 
+		</tr>
+	</table>
+	<p><em>备注：</em><br>分别在 IE 10 Quirks Mode 和 IE 8 Standards Mode 下运行：</p>
+	<p>在 Quirks Mode 下，table 单元格中的图片与单元格底部对齐，而在 Standards Mode 下，图片与单元格之间多了 3 个像素的空间。</p>
+</body>
+</html>
